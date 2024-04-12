@@ -38,8 +38,8 @@ async function sendMail(token, toAddress, cardName, cardLink) {
     const mailOptions = {
       from: "deckdexautomated@gmail.com",
       to: `${toAddress}`,
-      subject: `${cardName} is now available on trollandtoad.com`,
-      text: `Find ${cardName} on trollandtoad.com with the link below\n${cardLink}`,
+      subject: `${cardName} is now available on Amazon.com`,
+      text: `Find ${cardName} on Amazon.com with the link below\n${cardLink}`,
     };
 
     const result = await transport.sendMail(mailOptions);
